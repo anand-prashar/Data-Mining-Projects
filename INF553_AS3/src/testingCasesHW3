@@ -1,0 +1,59 @@
+Testing case 1:
+
+command line:  
+python lastname_firstname_collabFilter.py ratings-dataset.tsv 'hi mom' 'The Fugitive' 200
+
+Solution:
+8ccfa5d6-6f0b-407f-a463-0e1f745f9dad 0.389164755341
+vikram 0.311966997726
+51b10128-ab19-4f0a-a408-32d5041b88fa 0.199097533707
+terveen 0.136303191573
+mongoose 0.0386333704643
+JosephIsAwesome 0.0374936240754
+Lange 0.00218007458878
+c3e1cfa0-4677-4b03-a4b6-8d8d9b9a38f7 -0.00133731793896
+3.53121094644
+
+
+Testing case 2:
+
+command line:
+ python lastname_firstname_collabFilter.py ratings-dataset.tsv '8ccfa5d6-6f0b-407f-a463-0e1f745f9dad' 'The Fugitive' 200
+
+Solution:
+JosephIsAwesome 0.746853852213
+terveen 0.704610820091
+c3e1cfa0-4677-4b03-a4b6-8d8d9b9a38f7 0.623905006687
+vikram 0.547722557505
+51b10128-ab19-4f0a-a408-32d5041b88fa 0.487100096844
+Lange 0.437282904232
+hi mom 0.389164755341
+mongoose 0.0568071794269
+3.59202612644
+
+
+Testing case 3:
+
+command line:
+ python lastname_firstname_collabFilter.py ratings-dataset.tsv "What makes you think I'm not?" 'The Fugitive' 2
+
+Solution:
+terveen 0.699615894894
+51b10128-ab19-4f0a-a408-32d5041b88fa 0.656155171925
+3.70999342501
+
+Testing case 4:
+
+command line:
+python lastname_firstname_collabFilter.py ratings-dataset.tsv "What makes you think I'm not?" 'Fargo' 6
+
+
+Solution:
+cond0155 0.730430105163
+terveen 0.699615894894
+51b10128-ab19-4f0a-a408-32d5041b88fa 0.656155171925
+Connor M 0.631470189224
+vikram 0.449377612367
+6632e5b3-89cc-461c-aaf7-06e69e634333 0.323306907815
+4.1463386407
+
